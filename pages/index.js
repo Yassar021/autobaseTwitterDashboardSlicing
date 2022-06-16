@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Login from "/component/Login"
+import Login from "/component/Auth"
 
 const { Box, Center, Text } = require("@chakra-ui/react")
 
