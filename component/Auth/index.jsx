@@ -28,20 +28,22 @@ const Login = () => {
                                 <Input borderRadius={'8px'} h='56px'  borderColor={'#ABC9ED'} id='password' _placeholder={{color:'#3786E5',fontSize:'18px'}} placeholder="Password"  />
                             </FormControl>
                         </Box>
-                        <Button mt='16px'
-                            size='md'
-                            height='56px'
-                            width='135.25px'
-                            bgColor={'#3786E5'}
-                            color='#fff'
-                            _hover={{ bg: '#3786E5' }}
-                            _active={{
-                                bg: '#3786E5',
-                                transform: 'scale(0.98)',
-                            }}
-                            >
-                            Login
-                        </Button>
+                        <Link href="/dashboard">
+                            <Button mt='16px'
+                                size='md'
+                                height='56px'
+                                width='135.25px'
+                                bgColor={'#3786E5'}
+                                color='#fff'
+                                _hover={{ bg: '#3786E5' }}
+                                _active={{
+                                    bg: '#3786E5',
+                                    transform: 'scale(0.98)',
+                                }}
+                                >
+                                Login
+                            </Button>
+                        </Link>
                         <Link href='/forgotPassword'>
                             <Text mt='41px' color='#6484AA' fontSize={'16px'}><u>Lupa password? </u></Text>
                         </Link>

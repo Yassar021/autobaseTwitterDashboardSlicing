@@ -5,7 +5,7 @@ const AuthLayout = ({children, pageTitle}) => {
     return ( 
         <>
         <Head>
-            <title>Dashboard | {pageTitle}</title>
+            <title>Authetication | {pageTitle}</title>
             <meta name="description" content="Ariesloe Studio" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
