@@ -28,7 +28,7 @@ const Login = () => {
                                 <Input borderRadius={'8px'} h='56px'  borderColor={'#ABC9ED'} id='password' _placeholder={{color:'#3786E5',fontSize:'18px'}} placeholder="Password"  />
                             </FormControl>
                         </Box>
-                        <Link href="/dashboard">
+                        <Link href="/dashboard" _hover={{textDecoration:'none'}}>
                             <Button mt='16px'
                                 size='md'
                                 height='56px'

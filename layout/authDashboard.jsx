@@ -58,9 +58,9 @@ const AuthDashboard = ({children, pageTitle}) => {
                                         <Link href="/manageAdmin" textDecoration={'none'} _hover={{textDecoration:'none'}}>
                                             <Text ml='14px' mr='12px' fontSize={'16px'} fontWeight='500' color='#fff' fontFamily={'DM Sans'}>Manage Admin</Text>
                                         </Link>
-                                        <Link href="#" textDecoration={'none'} _hover={{textDecoration:'none'}}>
+                                        {/* <Link href="#" textDecoration={'none'} _hover={{textDecoration:'none'}}>
                                             <Text ml='14px' mr='12px' fontSize={'16px'} fontWeight='500' color='#fff' fontFamily={'DM Sans'}> Manage User</Text>
-                                        </Link>
+                                        </Link> */}
                                     </Stack>
                                 </Box>
                             </AccordionPanel>
@@ -68,7 +68,7 @@ const AuthDashboard = ({children, pageTitle}) => {
                     </Accordion>
 
                     <Stack direction={'row'} spacing='12px' ml='16px'>
-                        <Link textDecoration={'none'} _hover={{textDecoration:'none'}}>
+                        <Link href='/projects' textDecoration={'none'} _hover={{textDecoration:'none'}}>
                             <HStack spacing='12px'>
                                 <Stack>
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
