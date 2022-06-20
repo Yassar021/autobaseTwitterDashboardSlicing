@@ -1,25 +1,32 @@
-import { Box, Button, Flex, FormControl, Input, Text, useToast } from "@chakra-ui/react"
+import { Box, Button, Flex, FormControl, HStack, Image, Input, Text, useToast } from "@chakra-ui/react"
 import AuthDashboard from "../../../layout/authDashboard"
 
-const EditAdmin = () => {
+const AddTesti = () => {
     const toast = useToast({
-        position: 'top',
+        position: 'top', 
     })
     return ( 
-        <AuthDashboard pageTitle={'Edit Admin'}>
+        <AuthDashboard pageTitle={'Add Testimonials'}>
             <Flex direction={'column'} w='600px' justifyContent={'center'}>
                 <Box>
-                    <Text fontSize={'28px'} fontWeight='700' fontFamily={'DM Sans'} color='#6484AA'>EDIT ADMIN</Text>
+                    <Text fontSize={'28px'} fontWeight='700' fontFamily={'DM Sans'} color='#6484AA'>ADD TESTIMONIALS</Text>
                 </Box>
                 <Box my='48px'>
-                    <FormControl isRequired>
+                    {/* Image */}
+                    <HStack spacing='16px'>
+                        <Image src='/profile.png' alt='Image Project' w='150px' h='150px' />
+                        <Button colorScheme='teal' variant='solid'>
+                            Upload Image
+                        </Button>
+                    </HStack>
+                    <FormControl mt='16px' isRequired>
                         <Input borderRadius={'8px'} h='56px'  borderColor={'#6484AA'} id='name' _placeholder={{color:'#6484AA',fontSize:'18px'}} placeholder="Name"  />
                     </FormControl>
                     <FormControl  my='16px'  isRequired>
-                        <Input borderRadius={'8px'} h='56px'  borderColor={'#6484AA'} id='username' _placeholder={{color:'#6484AA',fontSize:'18px'}} placeholder="Username"  />
+                        <Input borderRadius={'8px'} h='56px'  borderColor={'#6484AA'} id='client' _placeholder={{color:'#6484AA',fontSize:'18px'}} placeholder="Client"  />
                     </FormControl>
                     <FormControl isRequired>
-                        <Input borderRadius={'8px'} h='56px'  borderColor={'#6484AA'} id='password' _placeholder={{color:'#6484AA',fontSize:'18px'}} placeholder="Password"  />
+                        <Input borderRadius={'8px'} h='56px'  borderColor={'#6484AA'} id='comentar' _placeholder={{color:'#6484AA',fontSize:'18px'}} placeholder="Commentar"  />
                     </FormControl>
                 </Box>
                 <Button colorScheme={'green'}
@@ -36,8 +43,8 @@ const EditAdmin = () => {
                         Save
                 </Button>
             </Flex>
-        </AuthDashboard> 
+        </AuthDashboard>
     )
 }
 
-export default EditAdmin
+export default AddTesti

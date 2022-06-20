@@ -3,24 +3,24 @@ import {AddIcon,} from "@chakra-ui/icons"
 import { useRef } from "react"
 import AuthDashboard from "../../../layout/authDashboard"
 
-const Projects = () => {
+const Testimonials = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const cancelRef = useRef()
 
     return ( 
-        <AuthDashboard pageTitle={'Manage Projects'}>
+        <AuthDashboard pageTitle={'Manage Testimonials'}>
             <Box>
-                <Text fontSize={'28px'} fontWeight='700' fontFamily={'DM Sans'} color='#6484AA'>MANAGE PROJECTS</Text>
+                <Text fontSize={'28px'} fontWeight='700' fontFamily={'DM Sans'} color='#6484AA'>MANAGE TESTIMONIALS</Text>
             </Box>
 
             <Box  mt='48px'>
                 <Box mb='32px'>
-                    <Link href="/addProject" _hover={{textDecoration:'none'}}>
+                    <Link href="/addTesti" _hover={{textDecoration:'none'}}>
                         <Button 
                                 leftIcon={<AddIcon />}
                                 size='md'
                                 height='56px'
-                                width='160px'
+                                width='220px'
                                 bgColor={'#3786E5'}
                                 color='#fff'
                                 _hover={{ bg: '#3786E5' }}
@@ -29,7 +29,7 @@ const Projects = () => {
                                     transform: 'scale(0.98)',
                                 }}
                                 >
-                                Add Project
+                                Add Testimonials
                             </Button>
                     </Link>
                 </Box>
@@ -39,12 +39,10 @@ const Projects = () => {
                         <Thead>
                             <Tr>
                                 <Th color={'#6484AA'} fontSize='16px'>ID</Th>
-                                <Th color={'#6484AA'} fontSize='16px'>Image Project</Th>
-                                <Th color={'#6484AA'} fontSize='16px'>Name Project</Th>
-                                <Th color={'#6484AA'} fontSize='16px'>Description</Th>
-                                <Th color={'#6484AA'} fontSize='16px'>Category</Th>
+                                <Th color={'#6484AA'} fontSize='16px'>Image</Th>
+                                <Th color={'#6484AA'} fontSize='16px'>Name</Th>
                                 <Th color={'#6484AA'} fontSize='16px'>Client</Th>
-                                <Th color={'#6484AA'} fontSize='16px'>Technology</Th>
+                                <Th color={'#6484AA'} fontSize='16px'>Comentar</Th>
                                 <Th color={'#6484AA'} fontSize='16px'>Action</Th>
                             </Tr>
                         </Thead>
@@ -54,15 +52,13 @@ const Projects = () => {
                                 <Td>
                                     <Image src='/' alt='Image Project' w='60px' h='60px' />
                                 </Td>
-                                <Td >The Desktop App Landing Page</Td>
+                                <Td >Courtney Henry</Td>
+                                <Td>Acme, Inc</Td>
                                 <Td>Something has always existed. <br/>According to physics, there can never<br/> be true physical nothingness—though<br/> there
                                      can be times when existence<br/> resembles nothing.</Td>
-                                <Td>Development</Td>
-                                <Td>Acme, Inc</Td>
-                                <Td>JavaScript, HTML, CSS</Td>
                                 <Td>
                                     <HStack spacing={'16px'}>
-                                        <Link href='/editProjects' _hover={{textDecoration:'none'}}>
+                                        <Link href='/editTesti' _hover={{textDecoration:'none'}}>
                                             <Button colorScheme={'messenger'}
                                                 size='md'
                                                 w='80px'
@@ -113,4 +109,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default Testimonials

@@ -1,16 +1,15 @@
-import { Box, Button, Editable, EditableInput, EditablePreview, Flex, FormControl, HStack, Image, Input, Text, useToast } from "@chakra-ui/react"
+import { Box, Button, Flex, FormControl, HStack, Image, Input, Text, useToast } from "@chakra-ui/react"
 import AuthDashboard from "../../../layout/authDashboard"
 
-const EditProjects = () => {
+const AddProject = () => {
     const toast = useToast({
         position: 'top', 
     })
-
     return ( 
-        <AuthDashboard pageTitle={'Edit Projects'}>
+        <AuthDashboard pageTitle={'Add Project'}>
             <Flex direction={'column'} w='600px' justifyContent={'center'}>
                 <Box>
-                    <Text fontSize={'28px'} fontWeight='700' fontFamily={'DM Sans'} color='#6484AA'>EDIT PROJECTS</Text>
+                    <Text fontSize={'28px'} fontWeight='700' fontFamily={'DM Sans'} color='#6484AA'>ADD PROJECTS</Text>
                 </Box>
                 <Box my='48px'>
                     {/* Image */}
@@ -50,8 +49,8 @@ const EditProjects = () => {
                         Save
                 </Button>
             </Flex>
-        </AuthDashboard>    
+        </AuthDashboard>
     )
 }
 
-export default EditProjects
+export default AddProject

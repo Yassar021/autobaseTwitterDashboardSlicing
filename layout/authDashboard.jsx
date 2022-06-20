@@ -24,7 +24,7 @@ const AuthDashboard = ({children, pageTitle}) => {
 
                 <Flex direction={'column'} gap='36px'> 
                     <Stack direction={'row'} spacing='12px' ml='16px'>
-                        <Link textDecoration={'none'} _hover={{textDecoration:'none'}}>
+                        <Link href='/dashboard' textDecoration={'none'} _hover={{textDecoration:'none'}}>
                             <HStack spacing='12px'>
                                 <Stack>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@ const AuthDashboard = ({children, pageTitle}) => {
                     </Stack>
 
                     <Stack direction={'row'} spacing='12px' ml='16px'>
-                        <Link textDecoration={'none'} _hover={{textDecoration:'none'}}>
+                        <Link href="/testimonials" textDecoration={'none'} _hover={{textDecoration:'none'}}>
                             <HStack spacing='12px'>
                                 <Stack>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +94,7 @@ const AuthDashboard = ({children, pageTitle}) => {
                     </Stack>
                     
                     <Stack direction={'row'} spacing='12px' ml='16px'>
-                        <Link textDecoration={'none'} _hover={{textDecoration:'none'}}>
+                        <Link href="/teams" textDecoration={'none'} _hover={{textDecoration:'none'}}>
                             <HStack spacing='12px'>
                                 <Stack>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,20 +107,20 @@ const AuthDashboard = ({children, pageTitle}) => {
                     </Stack>
 
                     <Stack direction={'row'} spacing='12px' ml='16px'>
-                        <Link textDecoration={'none'} _hover={{textDecoration:'none'}}>
+                        <Link href='/contact' textDecoration={'none'} _hover={{textDecoration:'none'}}>
                             <HStack spacing='12px'>
                                 <Stack>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.6123 17.3111V14.763C7.6123 14.1125 8.14346 13.5852 8.79868 13.5852H11.1938C11.5085 13.5852 11.8102 13.7093 12.0327 13.9302C12.2552 14.1511 12.3802 14.4506 12.3802 14.763V17.3111C12.3782 17.5815 12.485 17.8416 12.677 18.0335C12.8689 18.2254 13.13 18.3333 13.4024 18.3333H15.0365C15.7997 18.3353 16.5323 18.0357 17.0726 17.5007C17.613 16.9656 17.9166 16.2391 17.9166 15.4815V8.22237C17.9166 7.61037 17.6434 7.02986 17.1705 6.63721L11.6117 2.22988C10.6447 1.45712 9.25924 1.48207 8.32114 2.28914L2.88916 6.63721C2.39393 7.01828 2.09794 7.60052 2.08331 8.22237V15.4741C2.08331 17.0532 3.3728 18.3333 4.96346 18.3333H6.56022C7.126 18.3333 7.58581 17.8802 7.58991 17.3185L7.6123 17.3111Z" fill="white"/>
                                     </svg>
                                 </Stack>
-                                <Text fontSize={'16px'} fontWeight='500' color='#fff'>Blog</Text>
+                                <Text fontSize={'16px'} fontWeight='500' color='#fff'>Contact</Text>
                             </HStack>
                         </Link>
                     </Stack>
 
                     <Stack direction={'row'} spacing='12px' ml='16px'>
-                        <Link textDecoration={'none'} _hover={{textDecoration:'none'}}>
+                        <Link href="/quotes" textDecoration={'none'} _hover={{textDecoration:'none'}}>
                             <HStack spacing='12px'>
                                 <Stack>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
