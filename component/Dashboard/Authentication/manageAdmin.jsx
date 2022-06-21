@@ -1,4 +1,4 @@
-import { EditIcon } from "@chakra-ui/icons"
+import { AddIcon, EditIcon } from "@chakra-ui/icons"
 import { AlertDialog, AlertDialogBody, AlertDialogContent, AlertDialogFooter, AlertDialogHeader, AlertDialogOverlay, Box, Button, HStack, IconButton, Link, Table, TableCaption, TableContainer, Tbody, Td, Text, Th, Thead, Tr, useDisclosure, useToast, VStack } from "@chakra-ui/react"
 import { useRef } from "react"
 import AuthDashboard from "../../../layout/authDashboard"
@@ -15,6 +15,25 @@ const ManageAdmin = () => {
             </Box>
 
             <Box  mt='48px'>
+            <Box mb='32px'>
+                    <Link href="/addAdmin" _hover={{textDecoration:'none'}}>
+                        <Button 
+                                leftIcon={<AddIcon />}
+                                size='md'
+                                height='56px'
+                                width='160px'
+                                bgColor={'#3786E5'}
+                                color='#fff'
+                                _hover={{ bg: '#3786E5' }}
+                                _active={{
+                                    bg: '#3786E5',
+                                    transform: 'scale(0.98)',
+                                }}
+                                >
+                                Add Admin
+                            </Button>
+                    </Link>
+                </Box>
                 <TableContainer fontFamily={'DM Sans'}>
                     <Table size='lg' variant='simple'>
                         {/* <TableCaption>Imperial to metric conversion factors</TableCaption> */}
